@@ -1,4 +1,5 @@
 *{
+
 }
 h1{
 	color: #D90505;
@@ -57,4 +58,17 @@ tr{
 .padr{
    padding-right: 40px;
 }
+.raya h3{
+   background-color: #D90505;
+   color: black;
+}
+.raya{
+   vertical-align: super; 
+}
+.articulo{
+   background-color: #D9D2D2;
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
 
