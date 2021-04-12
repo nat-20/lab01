@@ -1,0 +1,60 @@
+*{
+   
+}
+h1{
+	color: #D90505;
+	text-align: center;
+   font: bold 300% monospace;
+}
+
+#nav ul{
+   list-style-type: none;
+   text-align: center;
+   background-color: black;
+   padding: 0;
+   overflow: hidden;
+}
+
+#nav li{
+   display: inline;
+   text-align: center;
+   padding: 1%;
+   margin: 0px;
+   border-right: 2px solid #e7e7e7;
+   float: left;
+   width: 13%;
+}
+
+#nav li a{
+	color: white;
+	text-decoration: none;
+   font: bold 150% monospace;
+}
+
+.active{
+	padding: 10px;
+}
+
+#momentos h2{
+   text-align: center;
+}
+h3{
+   color: #D90505;
+   font: bold;
+   text-align: left;
+}
+p{
+   text-align: justify;
+}
+.mult{
+   text-align: center;
+}
+td{
+   text-align: center;
+}
+tr{
+   border: 1px solid black;
+}
+.padr{
+   padding-right: 40px;
+}

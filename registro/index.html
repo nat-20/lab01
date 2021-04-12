@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../rock-and-roll.png">
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+</head>
+<body>
+	<header>
+		<a href="../inicio/index.html"><img src="../rock-and-roll.png" style="float: left; width: 5%;"></a>
+		<h1 style="text-decoration-line: none;"><a href="../inicio/index.html" style="text-decoration: none; color: #D90505;">A rockanrolear!</a></h1>
+		<nav id="nav">
+			<ul>
+				<li><a href="../inicio/index.html">INICIO</a></li>
+				<li><a href="../historia/index.html">NOTICIAS</a></li>
+				<li><a href="../top_5/index.html">TOP 5</a></li>
+				<li style="float: right; border-left: 2px solid #e7e7e7; border-right: none;"><a class="active" href="../registro/index.html">Registro</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container" style="padding-right: 90px; padding-left: 90px;">
+		<h1>REGISTRO</h1>
+		<form action="confirmacion.html">
+			<fieldset>
+			<legend>Datos Personales </legend>
+			<label>Nombre: </label><input type="text" name="nombre" size="30" maxlength="20" placeholder="nombre" required>
+
+			<label>Apellido: </label><input type="text" name="apellido" size="30" maxlength="20" placeholder="apellido" required><br><br>
+
+			<label>Fecha de nacimiento: </label><input type="date" id="start" name="trip-start"value="1999-12-18" required><br><br>
+
+			<label>Teléfono de contacto: </label><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+			<small>Formato: 123-456-7890</small><br><br>
+
+			<label>Nacionalidad: </label><input type="text" name="nacionalidad" size="20">
+		</fieldset>
+		<fieldset>
+			<legend>Datos de Registro</legend>
+
+			<label>Email: </label><input type="email" name="correo" placeholder="rockanroleando@gmail.com" pattern=".+@gmail.com" required><br><br>
+
+			<label>Usuario: </label><input type="text" name="usuario" size="10" maxlength="20" placeholder="rockstar" title="Inventa un usuario rockanrolero" required><br>
+
+			<p style="color: #D90505;">Ingresa una contraseña de mínimo 8 caracteres: </p>
+			<label>Contraseña: </label><input type="password" name="pass" minlength="8" required><br><br>
+			<label>Foto de perfil: </label><input type="file" name="foto"><br><br>
+		</fieldset>
+		<fieldset>
+			<legend>Datos para completar tu perfil</legend>
+
+			<label>Género: </label><br>
+			<input type="radio" name="genero" value="1" checked>Mujer<br>
+			<input type="radio" name="genero" value="2">Hombre<br>
+			<input type="radio" name="genero" value="3">Prefiero no decirlo<br><br>
+
+			<label>Edad: </label>
+			<select name="pais">
+				<option value="nino">Menos de 10 años</option>
+				<option value="menor">Entre 10 y 17 años</option>
+				<option value="joven">Entre 18 y 25 años</option>
+				<option value="adulto">Entre 26 y 40 años</option>
+				<option value="mayor">Entre 40 y 60 años</option>
+				<option value="mayor">Más de 60 años</option>
+			</select><br><br>
+
+			<label>Indique su nivel de conocimiento sobre el rock (Nada, Poco,Regular,Mucho, Experto):</label><br><input type="range" name="rango" min="1" max="5" list="lista-rango"><br><br>
+			<datalist id="lista-rango">
+				<option value="1" label="Nada">
+			  	<option value="2" label="Poco">
+			  	<option value="3" label="Regular">
+			  	<option value="4" label="Bueno">
+			  	<option value="5" label="Experto">
+			</datalist>
+
+			<textarea name="texto" rows="5" cols="70" maxlength="200" placeholder="Escriba una breve descripción de su persona... (máximo 200 palabras)"></textarea>
+		</fieldset><br><br>
+
+		<input type="submit" name="enviar" formmethod="get" formtarget="confirmacion.html">
+		</form><br><br>
+	</div>
+	<footer>
+		<div style=" background-color: #D90505; color: #F9E8E8; align-items: center;">
+			<table style="vertical-align: super;">
+				<tr>
+					<td width="30%"><h1 style=" color: #F9E8E8; padding-left: 90px;">A rockanrolear!</h1></td>
+					<td style="text-align: center; vertical-align: super;" >
+						<h2>Contenido</h2>
+						<ul style="list-style-type: none; padding: 0;">
+							<li><a href="../historia/index.html" style="text-decoration: none; color: #F9E8E8">NOTICIAS Y NOVEDADES DEL ROCK</a></li>
+							<li><a href="../top_5/index.html" style="text-decoration: none; color: #F9E8E8" >TOP 5</a></li>
+						</ul>
+					</td>
+					<td>
+						<h2 style="padding-right: 90px;: ">Creadora</h2>
+						<ul style="list-style-type: none; text-align: center; padding: 0; padding-right: 90px;">
+							<li>Natalia Pérez Puentes</li>
+							<li>Estudiante de Ingeniería de Telecomunicaciones</li>
+							<li>Universisad de Antioquia</li>
+							<li>natalia.perezp@udea.edu.co</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+	</footer>
+
+
+</body>
+</html>
