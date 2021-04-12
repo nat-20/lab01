@@ -21,7 +21,7 @@
 	</header>
 	<div class="container" style="padding-right: 90px; padding-left: 90px;">
 		<h1>REGISTRO</h1>
-		<form action="confirmacion.html">
+		<form action="confirmacion.html" target="_self">
 			<fieldset>
 			<legend>Datos Personales </legend>
 			<label>Nombre: </label><input type="text" name="nombre" size="30" maxlength="20" placeholder="nombre" required>
@@ -37,10 +37,11 @@
 		</fieldset>
 		<fieldset>
 			<legend>Datos de Registro</legend>
-
+			<p style="color: #D90505;">Ingresa una cuenta termianda en <b>gmail.com:</b></p>
 			<label>Email: </label><input type="email" name="correo" placeholder="rockanroleando@gmail.com" pattern=".+@gmail.com" required><br><br>
 
-			<label>Usuario: </label><input type="text" name="usuario" size="10" maxlength="20" placeholder="rockstar" title="Inventa un usuario rockanrolero" required><br>
+			<p style="color: #D90505;">Elige un usuario de mínimo 3 caracteres y máximo 15: <b>gmail.com:</b></p>
+			<label>Usuario: </label><input type="text" name="usuario" size="10" minlength="3" maxlength="15"  placeholder="rockstar" title="Inventa un usuario rockanrolero" required><br>
 
 			<p style="color: #D90505;">Ingresa una contraseña de mínimo 8 caracteres: </p>
 			<label>Contraseña: </label><input type="password" name="pass" minlength="8" required><br><br>
